@@ -1,0 +1,70 @@
+.row__posters {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.img-poster {
+  object-fit: cover;
+  width: 100%;
+  transition: transform 450ms;
+  cursor: pointer;
+}
+
+.img-poster:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 475px) {
+  .register-div {
+    flex-direction: column;
+  }
+}
+
+.form-group {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+}
+
+.error {
+  display: block;
+  background-color: red;
+  color: white;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+
+.success {
+  display: block;
+  background-color: lightblue;
+  color: black;
+  width: fit-content;
+  height: 50px;
+  padding: 5px;
+}
+.add-new-form {
+  display: flex;
+  justify-content: center;
+  height: 70vh;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+.add-new-form div {
+  width: 60vw;
+}
+.get-pdf-btn-div {
+  display: flex;
+  justify-content: flex-start !important;
+  margin-top: 20px;
+}
